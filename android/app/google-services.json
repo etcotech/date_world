@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1031436334714",
+    "project_id": "newapps-f7e05",
+    "storage_bucket": "newapps-f7e05.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031436334714:android:07bf59017dd9624c786dc3",
+        "android_client_info": {
+          "package_name": "com.dates.sa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7TtIzMC9aTZPiO5T3_qL9Qe9QQRBMhf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
