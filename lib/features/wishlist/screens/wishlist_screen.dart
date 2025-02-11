@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wishlist/controllers/wishlist_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wishlist/widgets/wishlist_shimmer.dart';
-import 'package:flutter_sixvalley_ecommerce/features/wishlist/widgets/wishlist_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/auth/controllers/auth_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_app_bar_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/no_internet_screen_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/not_loggedin_widget.dart';
+import 'package:date_world/features/wishlist/controllers/wishlist_controller.dart';
+import 'package:date_world/features/wishlist/widgets/wishlist_shimmer.dart';
+import 'package:date_world/features/wishlist/widgets/wishlist_widget.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
+import 'package:date_world/utill/images.dart';
+import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
+import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
+import 'package:date_world/common/basewidget/not_loggedin_widget.dart';
 import 'package:provider/provider.dart';
 
 class WishListScreen extends StatefulWidget {

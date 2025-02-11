@@ -1,5 +1,5 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/api_response.dart';
-import 'package:flutter_sixvalley_ecommerce/interface/repo_interface.dart';
+import 'package:date_world/data/model/api_response.dart';
+import 'package:date_world/interface/repo_interface.dart';
 
 abstract class AuthRepoInterface<T> implements RepositoryInterface{
 

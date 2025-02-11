@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/address/controllers/address_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:date_world/features/address/controllers/address_controller.dart';
+import 'package:date_world/theme/controllers/theme_controller.dart';
+import 'package:date_world/utill/custom_themes.dart';
+import 'package:date_world/utill/dimensions.dart';
 import 'package:provider/provider.dart';
 
 

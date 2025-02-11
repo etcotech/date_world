@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:flutter_sixvalley_ecommerce/features/profile/domain/models/profile_model.dart';
-import 'package:flutter_sixvalley_ecommerce/interface/repo_interface.dart';
+import 'package:date_world/features/profile/domain/models/profile_model.dart';
+import 'package:date_world/interface/repo_interface.dart';
 
 abstract class ProfileRepositoryInterface implements RepositoryInterface{
 

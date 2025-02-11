@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
+import 'package:date_world/main.dart';
+import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
 
 class ClearanceCustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? title;

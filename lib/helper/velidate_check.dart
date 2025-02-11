@@ -1,5 +1,5 @@
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/main.dart';
 
 class ValidateCheck{
   static String? validateEmail(String? value) {

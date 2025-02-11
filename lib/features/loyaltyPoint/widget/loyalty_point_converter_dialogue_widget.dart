@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/controllers/loyalty_point_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/profile/controllers/profile_contrroller.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/features/splash/controllers/splash_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_button_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_textfield_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/show_custom_snakbar_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/loyaltyPoint/widget/how_to_use_dialog_widget.dart';
+import 'package:date_world/features/loyaltyPoint/controllers/loyalty_point_controller.dart';
+import 'package:date_world/features/profile/controllers/profile_contrroller.dart';
+import 'package:date_world/helper/price_converter.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/features/splash/controllers/splash_controller.dart';
+import 'package:date_world/utill/color_resources.dart';
+import 'package:date_world/utill/custom_themes.dart';
+import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
+import 'package:date_world/common/basewidget/custom_button_widget.dart';
+import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/loyaltyPoint/widget/how_to_use_dialog_widget.dart';
 import 'package:provider/provider.dart';
 
 class LoyaltyPointConverterDialogueWidget extends StatefulWidget {

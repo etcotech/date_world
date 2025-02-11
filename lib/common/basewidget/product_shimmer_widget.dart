@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/product_shimmer_item_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/responsive_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:date_world/common/basewidget/product_shimmer_item_widget.dart';
+import 'package:date_world/helper/responsive_helper.dart';
+import 'package:date_world/utill/dimensions.dart';
 
 class ProductShimmer extends StatelessWidget {
   final bool isEnabled;

@@ -1,18 +1,18 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_directionality_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product_details/controllers/product_details_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product_details/domain/models/product_details_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/review/controllers/review_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/color_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/product_helper.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/rating_bar_widget.dart';
+import 'package:date_world/common/basewidget/custom_directionality_widget.dart';
+import 'package:date_world/features/product_details/controllers/product_details_controller.dart';
+import 'package:date_world/features/product_details/domain/models/product_details_model.dart';
+import 'package:date_world/features/review/controllers/review_controller.dart';
+import 'package:date_world/helper/color_helper.dart';
+import 'package:date_world/helper/price_converter.dart';
+import 'package:date_world/helper/product_helper.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/theme/controllers/theme_controller.dart';
+import 'package:date_world/utill/color_resources.dart';
+import 'package:date_world/utill/custom_themes.dart';
+import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/common/basewidget/rating_bar_widget.dart';
 import 'package:provider/provider.dart';
 
 

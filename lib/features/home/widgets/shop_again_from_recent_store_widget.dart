@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/controllers/theme_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/common/basewidget/custom_image_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/domain/models/shop_again_from_recent_store_model.dart';
-import 'package:flutter_sixvalley_ecommerce/features/shop/screens/shop_screen.dart';
+import 'package:date_world/helper/price_converter.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/theme/controllers/theme_controller.dart';
+import 'package:date_world/utill/custom_themes.dart';
+import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:date_world/features/shop/domain/models/shop_again_from_recent_store_model.dart';
+import 'package:date_world/features/shop/screens/shop_screen.dart';
 import 'package:provider/provider.dart';
 
 class ShopAgainFromRecentStoreWidget extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
+import 'package:date_world/utill/color_resources.dart';
 import 'package:shimmer/shimmer.dart';
 
 class WishListShimmer extends StatelessWidget {

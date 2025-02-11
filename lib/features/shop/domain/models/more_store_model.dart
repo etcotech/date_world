@@ -1,5 +1,5 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/image_full_url.dart';
-import 'package:flutter_sixvalley_ecommerce/features/product_details/domain/models/product_details_model.dart';
+import 'package:date_world/data/model/image_full_url.dart';
+import 'package:date_world/features/product_details/domain/models/product_details_model.dart';
 
 
 

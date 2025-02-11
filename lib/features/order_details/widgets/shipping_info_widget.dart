@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/features/order_details/controllers/order_details_controller.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
+import 'package:date_world/features/order_details/controllers/order_details_controller.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/utill/custom_themes.dart';
+import 'package:date_world/utill/dimensions.dart';
 
 class ShippingInfoWidget extends StatelessWidget {
   final OrderDetailsController? order;
