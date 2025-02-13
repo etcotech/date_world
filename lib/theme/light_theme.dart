@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 ThemeData light({Color? primaryColor, Color? secondaryColor})=> ThemeData(
-  fontFamily: 'TitilliumWeb',
+  fontFamily: 'Cairo',
   primaryColor: primaryColor ?? const Color(0xFF5F2020),
   brightness: Brightness.light,
   highlightColor: Colors.white,
