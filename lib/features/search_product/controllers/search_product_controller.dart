@@ -1,5 +1,4 @@
 
-import 'package:flutter/material.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/compare/controllers/compare_controller.dart';
 import 'package:date_world/features/product/domain/models/product_model.dart';
@@ -9,6 +8,7 @@ import 'package:date_world/features/search_product/domain/services/search_produc
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/main.dart';
 import 'package:date_world/utill/app_constants.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SearchProductController with ChangeNotifier {

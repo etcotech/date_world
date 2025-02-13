@@ -1,23 +1,23 @@
-import 'package:flutter/material.dart';
-import 'package:date_world/features/product/controllers/seller_product_controller.dart';
-import 'package:date_world/features/search_product/controllers/search_product_controller.dart';
-import 'package:date_world/localization/controllers/localization_controller.dart';
-import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/common/basewidget/product_filter_dialog_widget.dart';
+import 'package:date_world/common/basewidget/search_widget.dart';
 import 'package:date_world/features/brand/controllers/brand_controller.dart';
 import 'package:date_world/features/category/controllers/category_controller.dart';
 import 'package:date_world/features/coupon/controllers/coupon_controller.dart';
+import 'package:date_world/features/home/screens/home_screens.dart';
+import 'package:date_world/features/product/controllers/seller_product_controller.dart';
+import 'package:date_world/features/search_product/controllers/search_product_controller.dart';
 import 'package:date_world/features/shop/controllers/shop_controller.dart';
+import 'package:date_world/features/shop/screens/overview_screen.dart';
+import 'package:date_world/features/shop/widgets/shop_info_widget.dart';
+import 'package:date_world/features/shop/widgets/shop_product_view_list.dart';
+import 'package:date_world/localization/controllers/localization_controller.dart';
+import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/product_filter_dialog_widget.dart';
-import 'package:date_world/common/basewidget/search_widget.dart';
-import 'package:date_world/features/home/screens/home_screens.dart';
-import 'package:date_world/features/shop/screens/overview_screen.dart';
-import 'package:date_world/features/shop/widgets/shop_info_widget.dart';
-import 'package:date_world/features/shop/widgets/shop_product_view_list.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class TopSellerProductScreen extends StatefulWidget {

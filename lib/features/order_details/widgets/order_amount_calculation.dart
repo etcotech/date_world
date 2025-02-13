@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/amount_widget.dart';
 import 'package:date_world/features/order_details/controllers/order_details_controller.dart';
 import 'package:date_world/helper/price_converter.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/amount_widget.dart';
+import 'package:flutter/material.dart';
 
 class OrderAmountCalculation extends StatelessWidget {
   final double itemTotalAmount;

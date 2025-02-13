@@ -1,21 +1,21 @@
 import 'dart:convert';
 
-import 'package:drift/drift.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/data/local/cache_response.dart';
-import 'package:date_world/features/banner/domain/models/banner_model.dart';
 import 'package:date_world/data/model/api_response.dart';
+import 'package:date_world/features/banner/domain/models/banner_model.dart';
 import 'package:date_world/features/banner/domain/services/banner_service_interface.dart';
-import 'package:date_world/features/product/domain/models/product_model.dart';
-import 'package:date_world/features/product/screens/brand_and_category_product_screen.dart';
-import 'package:date_world/features/shop/controllers/shop_controller.dart';
-import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/features/brand/controllers/brand_controller.dart';
 import 'package:date_world/features/category/controllers/category_controller.dart';
+import 'package:date_world/features/product/domain/models/product_model.dart';
+import 'package:date_world/features/product/screens/brand_and_category_product_screen.dart';
 import 'package:date_world/features/product_details/screens/product_details_screen.dart';
+import 'package:date_world/features/shop/controllers/shop_controller.dart';
 import 'package:date_world/features/shop/screens/shop_screen.dart';
+import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/main.dart';
 import 'package:date_world/utill/app_constants.dart';
+import 'package:drift/drift.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class BannerController extends ChangeNotifier {

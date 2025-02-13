@@ -1,11 +1,5 @@
 import 'dart:io';
 
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:date_world/data/local/cache_response.dart';
 import 'package:date_world/features/address/controllers/address_controller.dart';
 import 'package:date_world/features/auth/controllers/auth_controller.dart';
@@ -26,6 +20,7 @@ import 'package:date_world/features/location/controllers/location_controller.dar
 import 'package:date_world/features/loyaltyPoint/controllers/loyalty_point_controller.dart';
 import 'package:date_world/features/notification/controllers/notification_controller.dart';
 import 'package:date_world/features/onboarding/controllers/onboarding_controller.dart';
+import 'package:date_world/features/onboarding/screens/onboarding_screen.dart';
 import 'package:date_world/features/order/controllers/order_controller.dart';
 import 'package:date_world/features/order_details/controllers/order_details_controller.dart';
 import 'package:date_world/features/product/controllers/product_controller.dart';
@@ -51,6 +46,13 @@ import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/theme/dark_theme.dart';
 import 'package:date_world/theme/light_theme.dart';
 import 'package:date_world/utill/app_constants.dart';
+import 'package:date_world/utill/color_resources.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 
 import 'di_container.dart' as di;
@@ -67,6 +69,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
 
+try{
 if(Firebase.apps.isEmpty) {
   if(Platform.isAndroid) {
     await Firebase.initializeApp(options: const FirebaseOptions(
@@ -78,6 +81,9 @@ if(Firebase.apps.isEmpty) {
   }else{
     await Firebase.initializeApp();
   }
+}
+}catch(e){
+
 }
   await FlutterDownloader.initialize(debug: true, ignoreSsl: true);
   await di.init();

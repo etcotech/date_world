@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/wallet/domain/models/transaction_model.dart';
 import 'package:date_world/features/wallet/domain/models/wallet_bonus_model.dart';
@@ -7,7 +7,7 @@ import 'package:date_world/features/wallet/screens/add_fund_to_wallet_screen.dar
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/helper/price_converter.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/material.dart';
 
 class WalletController extends ChangeNotifier {
   final WalletServiceInterface walletServiceInterface;

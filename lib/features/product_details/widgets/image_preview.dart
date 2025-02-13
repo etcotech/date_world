@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 
 class ImagePreview extends StatefulWidget {
   final String url;

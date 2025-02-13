@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
+import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 import 'package:url_launcher/url_launcher.dart';
 class SpecificationScreen extends StatelessWidget {

@@ -1,10 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/product_widget.dart';
 import 'package:date_world/features/deal/controllers/featured_deal_controller.dart';
-import 'package:date_world/helper/responsive_helper.dart';
-import 'package:date_world/features/home/widgets/aster_theme/find_what_you_need_shimmer.dart';
 import 'package:date_world/features/deal/widgets/featured_deal_card_widget.dart';
+import 'package:date_world/features/home/widgets/aster_theme/find_what_you_need_shimmer.dart';
+import 'package:date_world/helper/responsive_helper.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:provider/provider.dart';
 

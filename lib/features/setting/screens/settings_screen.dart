@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_expanded_app_bar_widget.dart';
+import 'package:date_world/features/setting/widgets/select_currency_bottom_sheet_widget.dart';
 import 'package:date_world/features/setting/widgets/select_language_bottom_sheet_widget.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/localization/language_constrants.dart';
@@ -7,8 +8,7 @@ import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_expanded_app_bar_widget.dart';
-import 'package:date_world/features/setting/widgets/select_currency_bottom_sheet_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SettingsScreen extends StatelessWidget {

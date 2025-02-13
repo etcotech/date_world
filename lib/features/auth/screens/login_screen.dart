@@ -1,5 +1,4 @@
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/custom_button_widget.dart';
 import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
 import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
@@ -10,7 +9,7 @@ import 'package:date_world/features/auth/screens/auth_screen.dart';
 import 'package:date_world/features/auth/screens/forget_password_screen.dart';
 import 'package:date_world/features/auth/screens/otp_login_screen.dart';
 import 'package:date_world/features/auth/widgets/only_social_login_widget.dart';
-import 'package:date_world/features/auth/widgets/social_login_widget.dart';
+// import 'package:date_world/features/auth/widgets/social_login_widget.dart';
 import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/splash/domain/models/config_model.dart';
@@ -20,6 +19,7 @@ import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -390,31 +390,31 @@ class _LoginScreenState extends State<LoginScreen> {
                                   const SizedBox(height: Dimensions.paddingSizeLarge),
                                 ],
 
-                                if((configModel.customerLogin?.loginOption?.socialMediaLogin == 1) && configModel.customerLogin?.loginOption?.otpLogin != 1)
-                                  Row(
-                                    children: [
-                                      Expanded(child: Divider(color: Theme.of(context).hintColor)),
-                                      const SizedBox(width: Dimensions.paddingSizeSmall),
+                                // if((configModel.customerLogin?.loginOption?.socialMediaLogin == 1) && configModel.customerLogin?.loginOption?.otpLogin != 1)
+                                //   Row(
+                                //     children: [
+                                //       Expanded(child: Divider(color: Theme.of(context).hintColor)),
+                                //       const SizedBox(width: Dimensions.paddingSizeSmall),
 
-                                      Text(getTranslated('or_sign_in_with', context)!,
-                                        style: Theme.of(context).textTheme.displayMedium!.copyWith(
-                                            fontSize: Dimensions.fontSizeDefault,
-                                            color: Theme.of(context).hintColor,
-                                            fontWeight: FontWeight.w400
-                                        ),
-                                      ),
+                                //       Text(getTranslated('or_sign_in_with', context)!,
+                                //         style: Theme.of(context).textTheme.displayMedium!.copyWith(
+                                //             fontSize: Dimensions.fontSizeDefault,
+                                //             color: Theme.of(context).hintColor,
+                                //             fontWeight: FontWeight.w400
+                                //         ),
+                                //       ),
 
-                                      const SizedBox(width: Dimensions.paddingSizeSmall),
-                                      Expanded(child: Divider(color: Theme.of(context).hintColor)),
-                                    ],
-                                  ),
+                                //       const SizedBox(width: Dimensions.paddingSizeSmall),
+                                //       Expanded(child: Divider(color: Theme.of(context).hintColor)),
+                                //     ],
+                                //   ),
 
                                 if(configModel.customerLogin?.loginOption?.socialMediaLogin == 1)
                                   const SizedBox(height: Dimensions.paddingSizeSmall),
 
 
-                                if(configModel.customerLogin?.loginOption?.socialMediaLogin == 1)
-                                  const Center(child: SocialLoginWidget()),
+                                // if(configModel.customerLogin?.loginOption?.socialMediaLogin == 1)
+                                //   const Center(child: SocialLoginWidget()),
                                 const SizedBox(height: Dimensions.paddingSizeLarge),
 
                                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [

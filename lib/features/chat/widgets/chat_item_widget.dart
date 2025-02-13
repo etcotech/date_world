@@ -1,16 +1,16 @@
 
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/chat/controllers/chat_controller.dart';
 import 'package:date_world/features/chat/domain/models/chat_model.dart';
+import 'package:date_world/features/chat/screens/chat_screen.dart';
+import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/helper/date_converter.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/features/chat/controllers/chat_controller.dart';
-import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
-import 'package:date_world/features/chat/screens/chat_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ChatItemWidget extends StatefulWidget {

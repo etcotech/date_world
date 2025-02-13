@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/features/loyaltyPoint/domain/models/loyalty_point_model.dart';
 import 'package:date_world/helper/date_converter.dart';
 import 'package:date_world/localization/language_constrants.dart';
@@ -6,6 +5,7 @@ import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 class LoyaltyPointWidget extends StatelessWidget {
   final LoyaltyPointList? loyaltyPointModel;
   final bool isLastItem;

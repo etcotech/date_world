@@ -1,26 +1,27 @@
 import 'dart:developer';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
+import 'package:date_world/features/auth/controllers/facebook_login_controller.dart';
+import 'package:date_world/features/auth/controllers/google_login_controller.dart';
 import 'package:date_world/features/auth/domain/models/signup_model.dart';
 import 'package:date_world/features/auth/domain/models/social_login_model.dart';
 import 'package:date_world/features/auth/enums/from_page.dart';
 import 'package:date_world/features/auth/enums/social_login_options.dart';
 import 'package:date_world/features/auth/screens/otp_registration_screen.dart';
 import 'package:date_world/features/auth/widgets/existing_account_bottom_sheet.dart';
+import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
 import 'package:date_world/features/profile/domain/models/profile_model.dart';
+import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/splash/domain/models/config_model.dart';
 import 'package:date_world/helper/responsive_helper.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/features/auth/controllers/auth_controller.dart';
-import 'package:date_world/features/auth/controllers/facebook_login_controller.dart';
-import 'package:date_world/features/auth/controllers/google_login_controller.dart';
-import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
-import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 

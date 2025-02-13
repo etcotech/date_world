@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 class WalletBonusListShimmer extends StatelessWidget {

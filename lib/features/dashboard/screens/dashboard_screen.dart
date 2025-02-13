@@ -1,5 +1,4 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/features/auth/controllers/auth_controller.dart';
 import 'package:date_world/features/cart/screens/cart_screen.dart';
 import 'package:date_world/features/chat/controllers/chat_controller.dart';
@@ -20,6 +19,7 @@ import 'package:date_world/features/wishlist/controllers/wishlist_controller.dar
 import 'package:date_world/helper/network_info.dart';
 import 'package:date_world/main.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class DashBoardScreen extends StatefulWidget {

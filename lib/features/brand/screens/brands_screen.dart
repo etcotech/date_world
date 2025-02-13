@@ -1,12 +1,11 @@
-import 'package:flutter/material.dart';
-
-import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/features/brand/controllers/brand_controller.dart';
+import 'package:date_world/features/brand/widgets/brand_list_widget.dart';
+import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/features/brand/widgets/brand_list_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class BrandsView extends StatelessWidget {

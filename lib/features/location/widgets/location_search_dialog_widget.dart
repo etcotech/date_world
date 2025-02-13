@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/features/location/controllers/location_controller.dart';
 import 'package:date_world/features/location/domain/models/prediction_model.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_typeahead/flutter_typeahead.dart';
 
 class LocationSearchDialogWidget extends StatelessWidget {
   final GoogleMapController? mapController;

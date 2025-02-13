@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/splash/domain/models/config_model.dart';
@@ -7,6 +6,7 @@ import 'package:date_world/main.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 

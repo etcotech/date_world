@@ -1,5 +1,4 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:date_world/features/checkout/widgets/shipping_details_widget.dart';
 import 'package:date_world/features/support/controllers/support_ticket_controller.dart';
 import 'package:date_world/features/support/domain/models/support_ticket_model.dart';
 import 'package:date_world/features/support/screens/support_conversation_screen.dart';
@@ -9,7 +8,8 @@ import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/features/checkout/widgets/shipping_details_widget.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:provider/provider.dart';
 

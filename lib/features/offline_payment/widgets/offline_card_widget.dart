@@ -1,11 +1,11 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/features/checkout/controllers/checkout_controller.dart';
+import 'package:date_world/features/checkout/widgets/shipping_details_widget.dart';
 import 'package:date_world/features/offline_payment/domain/models/offline_payment_model.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/features/checkout/widgets/shipping_details_widget.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class OfflineCardWidget extends StatelessWidget {

@@ -1,12 +1,12 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:date_world/features/loyaltyPoint/widget/how_to_use_dialog_widget.dart';
 import 'package:date_world/features/profile/controllers/profile_contrroller.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/features/loyaltyPoint/widget/how_to_use_dialog_widget.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class LoyaltyPointInfoWidget extends StatelessWidget {

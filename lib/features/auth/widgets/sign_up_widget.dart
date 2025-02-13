@@ -1,21 +1,21 @@
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_button_widget.dart';
+import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
 import 'package:date_world/features/auth/domain/models/register_model.dart';
 import 'package:date_world/features/auth/screens/login_screen.dart';
 import 'package:date_world/features/auth/widgets/condition_check_box_widget.dart';
+import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
 import 'package:date_world/features/profile/controllers/profile_contrroller.dart';
+import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/helper/velidate_check.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/features/auth/controllers/auth_controller.dart';
-import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_button_widget.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
-import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
-import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SignUpWidget extends StatefulWidget {

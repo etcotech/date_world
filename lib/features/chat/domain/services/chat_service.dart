@@ -1,7 +1,7 @@
-import 'package:file_picker/file_picker.dart';
 import 'package:date_world/features/chat/domain/models/message_body.dart';
 import 'package:date_world/features/chat/domain/repositories/chat_repository_interface.dart';
 import 'package:date_world/features/chat/domain/services/chat_service_interface.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:image_picker/image_picker.dart';
 
 class ChatService implements ChatServiceInterface{

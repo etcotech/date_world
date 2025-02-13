@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/title_row_widget.dart';
 import 'package:date_world/features/search_product/controllers/search_product_controller.dart';
 import 'package:date_world/features/search_product/screens/search_product_screen.dart';
@@ -7,6 +6,7 @@ import 'package:date_world/localization/controllers/localization_controller.dart
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class PublicatioinHouseWidget extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/coupon/domain/models/coupon_item_model.dart';
 import 'package:date_world/features/coupon/domain/models/coupon_model.dart';
@@ -6,7 +6,7 @@ import 'package:date_world/features/coupon/domain/services/coupon_service_interf
 import 'package:date_world/helper/price_converter.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/material.dart';
 
 class CouponController extends ChangeNotifier {
   final CouponServiceInterface? couponRepo;

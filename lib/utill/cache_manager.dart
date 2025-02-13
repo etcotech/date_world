@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:drift/drift.dart';
 import 'package:date_world/data/local/cache_response.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/main.dart';
+import 'package:drift/drift.dart';
 
 class CacheManager {
 

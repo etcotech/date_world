@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/loyaltyPoint/domain/models/loyalty_point_model.dart';
 import 'package:date_world/features/loyaltyPoint/domain/services/loyalty_point_service_interface.dart';
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/material.dart';
 
 class LoyaltyPointController extends ChangeNotifier {
   final LoyaltyPointServiceInterface loyaltyPointServiceInterface;

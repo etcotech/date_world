@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:date_world/data/datasource/remote/dio/dio_client.dart';
 import 'package:date_world/data/datasource/remote/exception/api_error_handler.dart';
 import 'package:date_world/data/model/api_response.dart';
@@ -6,6 +5,7 @@ import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/wallet/domain/repositories/wallet_repository_interface.dart';
 import 'package:date_world/main.dart';
 import 'package:date_world/utill/app_constants.dart';
+import 'package:dio/dio.dart';
 import 'package:provider/provider.dart';
 
 class WalletRepository implements WalletRepositoryInterface{

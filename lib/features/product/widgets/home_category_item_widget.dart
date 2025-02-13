@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/product_widget.dart';
+import 'package:date_world/common/basewidget/title_row_widget.dart';
 import 'package:date_world/features/product/domain/models/home_category_product_model.dart';
 import 'package:date_world/features/product/screens/brand_and_category_product_screen.dart';
 import 'package:date_world/features/product_details/screens/product_details_screen.dart';
 import 'package:date_world/helper/responsive_helper.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/product_widget.dart';
-import 'package:date_world/common/basewidget/title_row_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class HomeCategoryProductItemWidget extends StatelessWidget {

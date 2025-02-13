@@ -1,12 +1,12 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/features/search_product/controllers/search_product_controller.dart';
+import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:substring_highlight/substring_highlight.dart';
 

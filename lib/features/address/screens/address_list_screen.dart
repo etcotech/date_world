@@ -1,15 +1,15 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
+import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
 import 'package:date_world/features/address/controllers/address_controller.dart';
+import 'package:date_world/features/address/screens/add_new_address_screen.dart';
 import 'package:date_world/features/address/widgets/address_shimmer.dart';
+import 'package:date_world/features/address/widgets/remove_address_bottom_sheet_widget.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
-import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
-import 'package:date_world/features/address/widgets/remove_address_bottom_sheet_widget.dart';
-import 'package:date_world/features/address/screens/add_new_address_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class AddressListScreen extends StatefulWidget {

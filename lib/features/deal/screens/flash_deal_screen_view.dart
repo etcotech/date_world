@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/features/deal/controllers/flash_deal_controller.dart';
-import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/common/basewidget/title_row_widget.dart';
+import 'package:date_world/features/deal/controllers/flash_deal_controller.dart';
 import 'package:date_world/features/deal/widgets/flash_deals_list_widget.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class FlashDealScreenView extends StatefulWidget {

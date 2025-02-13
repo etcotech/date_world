@@ -1,12 +1,11 @@
 
-import 'package:flutter/material.dart';
 import 'package:date_world/localization/controllers/localization_controller.dart';
 import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/main.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 

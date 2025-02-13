@@ -1,27 +1,27 @@
 import 'dart:io';
 
-import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
+import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
+import 'package:date_world/common/basewidget/paginated_list_view_widget.dart';
 import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/chat/controllers/chat_controller.dart';
 import 'package:date_world/features/chat/domain/models/message_body.dart';
+import 'package:date_world/features/chat/widgets/chat_shimmer_widget.dart';
+import 'package:date_world/features/chat/widgets/message_bubble_widget.dart';
 import 'package:date_world/helper/image_size_checker.dart';
 import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/features/chat/controllers/chat_controller.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/app_constants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
-import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
-import 'package:date_world/common/basewidget/paginated_list_view_widget.dart';
-import 'package:date_world/features/chat/widgets/chat_shimmer_widget.dart';
-import 'package:date_world/features/chat/widgets/message_bubble_widget.dart';
+import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart' as foundation;
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter/foundation.dart' as foundation;
 
 class ChatScreen extends StatefulWidget {
   final int? id;

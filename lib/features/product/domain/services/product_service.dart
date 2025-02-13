@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/features/product/domain/repositories/product_repository_interface.dart';
 import 'package:date_world/features/product/domain/services/product_service_interface.dart';
 import 'package:date_world/features/product/enums/product_type.dart';
+import 'package:flutter/material.dart';
 
 class ProductService implements ProductServiceInterface{
   ProductRepositoryInterface productRepositoryInterface;

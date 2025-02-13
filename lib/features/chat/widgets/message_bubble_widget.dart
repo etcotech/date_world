@@ -1,16 +1,17 @@
 import 'dart:io';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:date_world/features/chat/domain/models/message_model.dart';
+
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:date_world/common/basewidget/image_diaglog_widget.dart';
 import 'package:date_world/features/chat/controllers/chat_controller.dart';
+import 'package:date_world/features/chat/domain/models/message_model.dart';
 import 'package:date_world/features/chat/widgets/chatting_multi_image_slider.dart';
 import 'package:date_world/localization/controllers/localization_controller.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/common/basewidget/image_diaglog_widget.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';

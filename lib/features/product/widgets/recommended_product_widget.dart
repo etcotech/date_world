@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/common/basewidget/discount_tag_widget.dart';
+import 'package:date_world/features/home/shimmers/recommended_product_shimmer.dart';
 import 'package:date_world/features/product/controllers/product_controller.dart';
+import 'package:date_world/features/product_details/screens/product_details_screen.dart';
+import 'package:date_world/features/product_details/widgets/favourite_button_widget.dart';
 import 'package:date_world/helper/price_converter.dart';
 import 'package:date_world/helper/responsive_helper.dart';
 import 'package:date_world/localization/controllers/localization_controller.dart';
@@ -10,10 +13,7 @@ import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/features/home/shimmers/recommended_product_shimmer.dart';
-import 'package:date_world/features/product_details/screens/product_details_screen.dart';
-import 'package:date_world/features/product_details/widgets/favourite_button_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 

@@ -1,16 +1,16 @@
 import 'dart:convert';
 
-import 'package:drift/drift.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/data/local/cache_response.dart';
 import 'package:date_world/data/model/api_response.dart';
+import 'package:date_world/features/brand/controllers/brand_controller.dart';
 import 'package:date_world/features/category/domain/models/category_model.dart';
 import 'package:date_world/features/category/domain/services/category_service_interface.dart';
 import 'package:date_world/features/product/controllers/seller_product_controller.dart';
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/features/brand/controllers/brand_controller.dart';
 import 'package:date_world/utill/app_constants.dart';
+import 'package:drift/drift.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class CategoryController extends ChangeNotifier {

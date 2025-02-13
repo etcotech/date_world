@@ -1,7 +1,3 @@
-import 'package:dotted_border/dotted_border.dart';
-import 'package:dotted_line/dotted_line.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:date_world/features/coupon/domain/models/coupon_item_model.dart';
 import 'package:date_world/helper/date_converter.dart';
 import 'package:date_world/helper/price_converter.dart';
@@ -11,6 +7,10 @@ import 'package:date_world/utill/app_constants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:dotted_border/dotted_border.dart';
+import 'package:dotted_line/dotted_line.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 import 'package:provider/provider.dart';
 

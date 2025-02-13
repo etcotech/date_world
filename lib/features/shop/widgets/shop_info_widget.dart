@@ -1,19 +1,19 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/common/basewidget/not_logged_in_bottom_sheet_widget.dart';
 import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
 import 'package:date_world/features/chat/controllers/chat_controller.dart';
+import 'package:date_world/features/chat/screens/chat_screen.dart';
+import 'package:date_world/features/shop/controllers/shop_controller.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/helper/price_converter.dart';
 import 'package:date_world/helper/responsive_helper.dart';
 import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/features/auth/controllers/auth_controller.dart';
-import 'package:date_world/features/shop/controllers/shop_controller.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/features/chat/screens/chat_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ShopInfoWidget extends StatelessWidget {

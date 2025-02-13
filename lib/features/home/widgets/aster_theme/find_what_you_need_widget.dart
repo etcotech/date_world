@@ -1,15 +1,15 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:date_world/features/home/widgets/aster_theme/find_what_you_need_shimmer.dart';
 import 'package:date_world/features/product/controllers/product_controller.dart';
 import 'package:date_world/features/product/screens/brand_and_category_product_screen.dart';
 import 'package:date_world/helper/responsive_helper.dart';
-import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/localization/controllers/localization_controller.dart';
+import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/features/home/widgets/aster_theme/find_what_you_need_shimmer.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class FindWhatYouNeedView extends StatelessWidget {

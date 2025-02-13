@@ -1,4 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:date_world/common/basewidget/image_diaglog_widget.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
+import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
+import 'package:date_world/features/home/shimmers/order_details_shimmer.dart';
 import 'package:date_world/features/order/controllers/order_controller.dart';
 import 'package:date_world/features/order_details/controllers/order_details_controller.dart';
 import 'package:date_world/features/order_details/widgets/cal_chat_widget.dart';
@@ -11,17 +15,13 @@ import 'package:date_world/features/order_details/widgets/seller_section_widget.
 import 'package:date_world/features/order_details/widgets/shipping_and_billing_widget.dart';
 import 'package:date_world/features/order_details/widgets/shipping_info_widget.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
-import 'package:date_world/main.dart';
-import 'package:date_world/features/auth/controllers/auth_controller.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/common/basewidget/image_diaglog_widget.dart';
-import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
-import 'package:date_world/features/home/shimmers/order_details_shimmer.dart';
 import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/main.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class OrderDetailsScreen extends StatefulWidget {

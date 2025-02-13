@@ -1,9 +1,9 @@
 
-import 'package:flutter/material.dart';
 import 'package:date_world/features/address/domain/models/address_model.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 
 class AddressTypeWidget extends StatelessWidget {
   final AddressModel? address;

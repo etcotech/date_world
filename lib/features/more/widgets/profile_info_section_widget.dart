@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/common/basewidget/not_logged_in_bottom_sheet_widget.dart';
 import 'package:date_world/features/auth/controllers/auth_controller.dart';
@@ -7,6 +6,7 @@ import 'package:date_world/features/profile/screens/profile_screen1.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ProfileInfoSectionWidget extends StatelessWidget {
@@ -69,7 +69,7 @@ class ProfileInfoSectionWidget extends StatelessWidget {
                     Text(profile.userInfoModel?.phone??'', style: 
                     textRegular.copyWith( fontSize: Dimensions.fontSizeLarge)),
                   ],)),
-
+isGuestMode?const SizedBox():
                   InkWell(onTap: ()=>          Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ProfileScreen1())),
                     child: const Padding(padding: EdgeInsets.all(8.0),
                       child: SizedBox(width: 40, child:

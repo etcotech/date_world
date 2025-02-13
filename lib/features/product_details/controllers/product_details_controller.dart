@@ -1,8 +1,7 @@
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:flutter/material.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/product/controllers/seller_product_controller.dart';
 import 'package:date_world/features/product_details/domain/models/product_details_model.dart';
@@ -11,7 +10,8 @@ import 'package:date_world/features/product_details/enums/preview_type.dart';
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:open_file_manager/open_file_manager.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';

@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
+import 'package:date_world/common/basewidget/title_row_widget.dart';
 import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
+import 'package:date_world/features/home/shimmers/product_details_shimmer.dart';
 import 'package:date_world/features/product/controllers/product_controller.dart';
 import 'package:date_world/features/product/controllers/seller_product_controller.dart';
 import 'package:date_world/features/product_details/controllers/product_details_controller.dart';
@@ -13,8 +15,6 @@ import 'package:date_world/features/product_details/widgets/review_and_specifica
 import 'package:date_world/features/product_details/widgets/shop_info_widget.dart';
 import 'package:date_world/features/product_details/widgets/youtube_video_widget.dart';
 import 'package:date_world/features/review/controllers/review_controller.dart';
-import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
-import 'package:date_world/features/home/shimmers/product_details_shimmer.dart';
 import 'package:date_world/features/review/widgets/review_section.dart';
 import 'package:date_world/features/shop/screens/shop_screen.dart';
 import 'package:date_world/features/shop/widgets/shop_more_product_view_list.dart';
@@ -22,7 +22,7 @@ import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/title_row_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ProductDetails extends StatefulWidget {

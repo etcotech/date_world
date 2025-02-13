@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/splash/domain/models/config_model.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'marque_text_widget.dart';

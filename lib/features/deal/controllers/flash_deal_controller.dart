@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:drift/drift.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/data/local/cache_response.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/deal/domain/models/flash_deal_model.dart';
@@ -11,6 +9,8 @@ import 'package:date_world/features/product/domain/models/product_model.dart';
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/main.dart';
 import 'package:date_world/utill/app_constants.dart';
+import 'package:drift/drift.dart';
+import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class FlashDealController extends ChangeNotifier {

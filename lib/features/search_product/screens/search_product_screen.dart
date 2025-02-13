@@ -1,19 +1,19 @@
 
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
 import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
+import 'package:date_world/common/basewidget/product_shimmer_widget.dart';
 import 'package:date_world/features/brand/controllers/brand_controller.dart';
 import 'package:date_world/features/category/controllers/category_controller.dart';
+import 'package:date_world/features/search_product/controllers/search_product_controller.dart';
 import 'package:date_world/features/search_product/widgets/partial_matched_widget.dart';
 import 'package:date_world/features/search_product/widgets/search_product_widget.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/features/search_product/controllers/search_product_controller.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
-import 'package:date_world/common/basewidget/product_shimmer_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SearchScreen extends StatefulWidget {

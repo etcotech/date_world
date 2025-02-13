@@ -1,5 +1,4 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/product_widget.dart';
 import 'package:date_world/common/basewidget/slider_product_shimmer_widget.dart';
 import 'package:date_world/common/basewidget/title_row_widget.dart';
@@ -9,6 +8,7 @@ import 'package:date_world/features/product/screens/view_all_product_screen.dart
 import 'package:date_world/helper/responsive_helper.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class FeaturedProductWidget extends StatelessWidget {

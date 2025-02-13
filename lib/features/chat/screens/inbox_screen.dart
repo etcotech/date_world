@@ -1,18 +1,18 @@
-import 'package:flutter/material.dart';
-import 'package:date_world/features/chat/domain/models/chat_model.dart';
-import 'package:date_world/features/chat/widgets/conversation_tabview.dart';
-import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/features/auth/controllers/auth_controller.dart';
-import 'package:date_world/features/chat/controllers/chat_controller.dart';
-import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/utill/images.dart';
 import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
 import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
 import 'package:date_world/common/basewidget/not_loggedin_widget.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
+import 'package:date_world/features/chat/controllers/chat_controller.dart';
+import 'package:date_world/features/chat/domain/models/chat_model.dart';
 import 'package:date_world/features/chat/widgets/chat_item_widget.dart';
+import 'package:date_world/features/chat/widgets/conversation_tabview.dart';
 import 'package:date_world/features/chat/widgets/inbox_shimmer_widget.dart';
 import 'package:date_world/features/chat/widgets/search_inbox_widget.dart';
 import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
+import 'package:date_world/localization/language_constrants.dart';
+import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 

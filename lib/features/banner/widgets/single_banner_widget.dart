@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/features/banner/controllers/banner_controller.dart';
 import 'package:date_world/features/banner/domain/models/banner_model.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 

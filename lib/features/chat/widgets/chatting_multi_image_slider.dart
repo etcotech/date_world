@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/features/chat/domain/models/message_model.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:flutter/material.dart';
 
 class ChattingMultiImageSlider extends StatefulWidget {
   final List<Attachment> images;

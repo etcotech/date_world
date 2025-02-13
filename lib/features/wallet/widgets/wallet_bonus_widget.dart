@@ -1,5 +1,4 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/features/home/shimmers/wallet_bonus_shimmer.dart';
 import 'package:date_world/features/wallet/controllers/wallet_controller.dart';
 import 'package:date_world/helper/date_converter.dart';
@@ -9,6 +8,7 @@ import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class WalletBonusWidget extends StatelessWidget {

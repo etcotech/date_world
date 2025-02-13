@@ -34,7 +34,7 @@
     </queries>
 
     <application
-        android:label="6Valley"
+        android:label="saudi dates"
         android:name="${applicationName}"
         android:extractNativeLibs="true"
         android:requestLegacyExternalStorage="true"

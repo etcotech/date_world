@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/notification/domain/models/notification_model.dart';
 import 'package:date_world/features/notification/domain/services/notification_service_interface.dart';
 import 'package:date_world/helper/api_checker.dart';
+import 'package:flutter/material.dart';
 
 class NotificationController extends ChangeNotifier {
   final NotificationServiceInterface notificationServiceInterface;

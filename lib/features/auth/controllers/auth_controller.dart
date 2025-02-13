@@ -1,10 +1,10 @@
 import 'dart:convert';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:date_world/features/auth/domain/models/register_model.dart';
+
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/data/model/error_response.dart';
 import 'package:date_world/data/model/response_model.dart';
+import 'package:date_world/features/auth/domain/models/register_model.dart';
 import 'package:date_world/features/auth/domain/models/signup_model.dart';
 import 'package:date_world/features/auth/domain/models/social_login_model.dart';
 import 'package:date_world/features/auth/domain/models/user_log_data.dart';
@@ -21,10 +21,11 @@ import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/splash/domain/models/config_model.dart';
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/localization/app_localization.dart';
+import 'package:date_world/localization/controllers/localization_controller.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/localization/controllers/localization_controller.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 

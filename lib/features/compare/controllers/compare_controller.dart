@@ -1,11 +1,11 @@
-import 'package:flutter/foundation.dart';
-import 'package:date_world/features/compare/domain/models/attribute_model.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/data/model/api_response.dart';
+import 'package:date_world/features/compare/domain/models/attribute_model.dart';
 import 'package:date_world/features/compare/domain/models/compare_model.dart';
 import 'package:date_world/features/compare/domain/services/compare_service_interface.dart';
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/main.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/foundation.dart';
 
 
 class CompareController extends ChangeNotifier {

@@ -1,7 +1,8 @@
 
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:date_world/common/basewidget/custom_button_widget.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
 import 'package:date_world/features/checkout/controllers/checkout_controller.dart';
+import 'package:date_world/features/checkout/widgets/custom_check_box_widget.dart';
 import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/splash/domain/models/config_model.dart';
 import 'package:date_world/features/wallet/controllers/wallet_controller.dart';
@@ -9,9 +10,8 @@ import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/custom_button_widget.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
-import 'package:date_world/features/checkout/widgets/custom_check_box_widget.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 

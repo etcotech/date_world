@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/features/clearance_sale/widgets/clearance_custom_textfield_widget.dart';
 import 'package:date_world/features/clearance_sale/widgets/clearance_sale_filter_dialog_widget.dart';
 import 'package:date_world/features/search_product/controllers/search_product_controller.dart';
@@ -7,6 +6,7 @@ import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 

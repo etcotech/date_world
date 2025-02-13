@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/no_internet_screen_widget.dart';
 import 'package:date_world/features/auth/controllers/auth_controller.dart';
 import 'package:date_world/features/chat/screens/inbox_screen.dart';
@@ -20,6 +19,7 @@ import 'package:date_world/push_notification/models/notification_body.dart';
 import 'package:date_world/utill/app_constants.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class SplashScreen extends StatefulWidget {

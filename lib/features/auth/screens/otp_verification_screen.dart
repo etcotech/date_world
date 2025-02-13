@@ -1,6 +1,10 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
+
+import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
 import 'package:date_world/common/basewidget/custom_asset_image_widget.dart';
+import 'package:date_world/common/basewidget/custom_button_widget.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
 import 'package:date_world/features/auth/domain/models/signup_model.dart';
 import 'package:date_world/features/auth/domain/models/user_log_data.dart';
 import 'package:date_world/features/auth/enums/from_page.dart';
@@ -9,19 +13,16 @@ import 'package:date_world/features/auth/screens/reset_password_screen.dart';
 import 'package:date_world/features/dashboard/screens/dashboard_screen.dart';
 import 'package:date_world/features/order_details/controllers/order_details_controller.dart';
 import 'package:date_world/features/profile/screens/profile_screen1.dart';
+import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/features/splash/domain/models/config_model.dart';
 import 'package:date_world/helper/email_checker_helper.dart';
 import 'package:date_world/helper/number_checker_helper.dart';
 import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/features/auth/controllers/auth_controller.dart';
-import 'package:date_world/features/splash/controllers/splash_controller.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_app_bar_widget.dart';
-import 'package:date_world/common/basewidget/custom_button_widget.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:provider/provider.dart';
 

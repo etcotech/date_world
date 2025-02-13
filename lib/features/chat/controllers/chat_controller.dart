@@ -1,11 +1,9 @@
+import 'dart:async';
 import 'dart:io';
-import 'package:file_picker/file_picker.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
-import 'package:date_world/features/chat/domain/models/message_body.dart';
+
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/chat/domain/models/chat_model.dart';
+import 'package:date_world/features/chat/domain/models/message_body.dart';
 import 'package:date_world/features/chat/domain/models/message_model.dart';
 import 'package:date_world/features/chat/domain/services/chat_service_interface.dart';
 import 'package:date_world/helper/api_checker.dart';
@@ -13,9 +11,12 @@ import 'package:date_world/helper/date_converter.dart';
 import 'package:date_world/helper/image_size_checker.dart';
 import 'package:date_world/main.dart';
 import 'package:date_world/utill/app_constants.dart';
-import 'package:image_picker/image_picker.dart';
-import 'dart:async';
+import 'package:file_picker/file_picker.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:http/http.dart' as http;
+import 'package:image_picker/image_picker.dart';
 import 'package:open_file_plus/open_file_plus.dart';
 
 enum SenderType {

@@ -1,5 +1,4 @@
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/custom_asset_image_widget.dart';
 import 'package:date_world/common/basewidget/custom_button_widget.dart';
 import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
@@ -16,6 +15,7 @@ import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class OtpRegistrationScreen extends StatefulWidget {

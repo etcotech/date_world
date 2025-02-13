@@ -1,21 +1,22 @@
 import 'dart:io';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+
+import 'package:date_world/common/basewidget/custom_button_widget.dart';
 import 'package:date_world/common/basewidget/custom_image_widget.dart';
+import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
+import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:date_world/features/auth/controllers/auth_controller.dart';
 import 'package:date_world/features/profile/controllers/profile_contrroller.dart';
 import 'package:date_world/features/profile/domain/models/profile_model.dart';
 import 'package:date_world/features/profile/screens/profile_screen1.dart';
+import 'package:date_world/features/profile/widgets/delete_account_bottom_sheet_widget.dart';
 import 'package:date_world/localization/language_constrants.dart';
-import 'package:date_world/features/auth/controllers/auth_controller.dart';
 import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
-import 'package:date_world/common/basewidget/custom_button_widget.dart';
-import 'package:date_world/common/basewidget/custom_textfield_widget.dart';
-import 'package:date_world/features/profile/widgets/delete_account_bottom_sheet_widget.dart';
-import 'package:date_world/common/basewidget/show_custom_snakbar_widget.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 

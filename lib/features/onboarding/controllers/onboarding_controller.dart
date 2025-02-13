@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/onboarding/domain/models/onboarding_model.dart';
 import 'package:date_world/features/onboarding/domain/services/onboarding_service_interface.dart';
 import 'package:date_world/helper/api_checker.dart';
+import 'package:flutter/material.dart';
 
 class OnBoardingController with ChangeNotifier {
   final OnBoardingServiceInterface onBoardingServiceInterface;

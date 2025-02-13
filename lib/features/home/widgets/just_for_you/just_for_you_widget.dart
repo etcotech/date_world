@@ -1,10 +1,10 @@
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/product_widget.dart';
 import 'package:date_world/features/product/controllers/product_controller.dart';
 import 'package:date_world/features/product/domain/models/product_model.dart';
 import 'package:date_world/helper/responsive_helper.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class JustForYouView extends StatefulWidget {

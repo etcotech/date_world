@@ -1,11 +1,11 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:date_world/data/model/api_response.dart';
 import 'package:date_world/features/location/domain/models/place_details_model.dart';
 import 'package:date_world/features/location/domain/models/prediction_model.dart';
 import 'package:date_world/features/location/domain/services/location_service_interface.dart';
 import 'package:date_world/helper/api_checker.dart';
 import 'package:date_world/main.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';

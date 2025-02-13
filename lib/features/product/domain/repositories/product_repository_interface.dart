@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/features/product/enums/product_type.dart';
 import 'package:date_world/interface/repo_interface.dart';
+import 'package:flutter/material.dart';
 
 abstract class ProductRepositoryInterface<T> extends RepositoryInterface {
 
