@@ -60,7 +60,7 @@ class SplashScreenState extends State<SplashScreen> {
 
   Future<void> _initializeAsync() async {
     await Future.delayed(const Duration(milliseconds: 500));
-    _route();
+    // _route();
   }
 
   @override

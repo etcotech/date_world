@@ -34,7 +34,7 @@
     </queries>
 
     <application
-        android:label="saudi dates"
+        android:label="عالم التمر"
         android:name="${applicationName}"
         android:extractNativeLibs="true"
         android:requestLegacyExternalStorage="true"
