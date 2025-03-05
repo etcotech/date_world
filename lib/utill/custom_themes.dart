@@ -3,57 +3,57 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 const titilliumRegular = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontSize: 12,
 );
 const titleRegular = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontWeight: FontWeight.w500,
   fontSize: 14,
 
 );
 const titleHeader = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontWeight: FontWeight.w600,
   fontSize: 16,
 
 );
 const titilliumSemiBold = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontSize: 12,
   fontWeight: FontWeight.w600,
 );
 
 const titilliumBold = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontSize: 14,
   fontWeight: FontWeight.w700,
 );
 const titilliumItalic = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontSize: 14,
   fontStyle: FontStyle.italic,
 );
 
 const textRegular = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontWeight: FontWeight.w300,
   fontSize: 14,
 );
 
 const textMedium = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontSize: 14,
   fontWeight: FontWeight.w500
 );
 const textBold = TextStyle(
-    fontFamily: 'Cairo-Regular',
+    fontFamily: 'Cairo',
     fontSize: 14,
     fontWeight: FontWeight.w600
 );
 
 const robotoBold = TextStyle(
-  fontFamily: 'Cairo-Regular',
+  fontFamily: 'Cairo',
   fontSize: 14,
   fontWeight: FontWeight.w700,
 );
