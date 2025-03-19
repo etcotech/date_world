@@ -6,6 +6,7 @@ import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 class CouponApplyWidget extends StatelessWidget {
@@ -33,8 +34,25 @@ class CouponApplyWidget extends StatelessWidget {
                       fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).textTheme.bodyLarge?.color),),),
 
                   Padding(padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
-                      child: Text('(-${PriceConverter.convertPrice(context, couponProvider.discount)} off)',
-                        style: textMedium.copyWith(color: Theme.of(context).primaryColor)))]),
+                      child: 
+                         Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
+                      Text('(-${PriceConverter.convertPrice(context, couponProvider.discount)} off)',
+                        style: textMedium.copyWith(color: 
+                        Theme.of(context).primaryColor)
+                        )
+                    ]))
+                        
+                        
+                        )]),
 
                 InkWell(onTap: ()=> couponProvider.removeCoupon(),
                     child: Icon(Icons.clear, color: Theme.of(context).colorScheme.error))])):

@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/common/basewidget/discount_tag_widget.dart';
 import 'package:date_world/features/product/domain/models/product_model.dart';
@@ -10,6 +9,9 @@ import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
 class ProductWidget extends StatelessWidget {
@@ -124,23 +126,51 @@ class ProductWidget extends StatelessWidget {
 
 
                 ((productModel.discount != null && productModel.discount! > 0) || (productModel.clearanceSale?.discountAmount ?? 0) > 0) ?
-                Text(PriceConverter.convertPrice(context, productModel.unitPrice),
-                    style: titleRegular.copyWith(color: Theme.of(context).hintColor,
-                      decoration: TextDecoration.lineThrough, fontSize: Dimensions.fontSizeSmall)) : const SizedBox.shrink(),
+                  Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
+                      Text(PriceConverter.convertPrice(context, productModel.unitPrice),
+                          style: titleRegular.copyWith(color: Theme.of(context).hintColor,
+                            decoration: TextDecoration.lineThrough, fontSize: 
+                            Dimensions.fontSizeSmall)),
+                    ],
+                  ),
+                ) 
+                      : const SizedBox.shrink(),
 
 const Divider(color: Colors.grey ,thickness: .8,),
-                Text(
-                  PriceConverter.convertPrice(
-                    context, productModel.unitPrice,
-                    discountType: (productModel.clearanceSale?.discountAmount ?? 0)  > 0
-                      ? productModel.clearanceSale?.discountType
-                      : productModel.discountType,
-                    discount: (productModel.clearanceSale?.discountAmount ?? 0)  > 0
-                      ? productModel.clearanceSale?.discountAmount
-                      : productModel.discount,
+               Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 5,
+                    children: [
+                         SvgPicture.asset(Images.SAR,
+                        width: 15,height: 15,
+                        color:Colors.black),
+                      Text(
+                        PriceConverter.convertPrice(
+                          context, productModel.unitPrice,
+                          discountType: (productModel.clearanceSale?.discountAmount ?? 0)  > 0
+                            ? productModel.clearanceSale?.discountType
+                            : productModel.discountType,
+                          discount: (productModel.clearanceSale?.discountAmount ?? 0)  > 0
+                            ? productModel.clearanceSale?.discountAmount
+                            : productModel.discount,
+                        ),
+                        style: robotoBold.copyWith(color: Theme.of(context).primaryColor),
+                      ),
+                    ],
                   ),
-                  style: robotoBold.copyWith(color: Theme.of(context).primaryColor),
                 ),
+
 
                 const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 

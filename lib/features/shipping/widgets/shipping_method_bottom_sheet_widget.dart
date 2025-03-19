@@ -5,7 +5,9 @@ import 'package:date_world/helper/price_converter.dart';
 import 'package:date_world/localization/language_constrants.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 class ShippingMethodBottomSheetWidget extends StatefulWidget {
@@ -80,8 +82,26 @@ class ShippingMethodBottomSheetWidgetState extends State<ShippingMethodBottomShe
                                         ' (Duration ${shippingController.shippingList![widget.sellerIndex].shippingMethodList![index].duration})'),),
                                     const SizedBox(width: Dimensions.paddingSizeSmall),
 
+
+
+   Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
                                     Text(' ${PriceConverter.convertPrice(context, shippingController.shippingList![widget.sellerIndex].shippingMethodList![index].cost)}',
-                                      style: textBold.copyWith(fontSize: Dimensions.fontSizeLarge))])))
+                                      style: textBold.copyWith(fontSize: Dimensions.fontSizeLarge)
+                                      
+                                      )
+                    ]))
+                                      
+                                      
+                                      ])))
                             ),
                           );
                         },

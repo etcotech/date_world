@@ -27,6 +27,7 @@ import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 
@@ -112,13 +113,49 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                         Row(children: [
 
                           Text("${getTranslated('price', context)}: ",
-                            style: titilliumRegular.copyWith(color: ColorResources.hintTextColor, fontSize: 14),),
+
+                            style: titilliumRegular.copyWith(color: ColorResources.hintTextColor, 
+                            fontSize: 14),),
+ Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
                           Text(PriceConverter.convertPrice(context, widget.orderDetailsModel.price),
-                            style: titilliumSemiBold.copyWith(color: ColorResources.getPrimary(context), fontSize: 16),),
+                            style: titilliumSemiBold.copyWith(color: ColorResources.getPrimary(context), 
+                            fontSize: 16),)
+                            
+                    ]))
+                            
+                            ,
 
                           widget.orderDetailsModel.productDetails!.taxModel == 'exclude'?
+                          
+                           Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
                           Text('(${getTranslated('tax', context)} ${PriceConverter.convertPrice(context, widget.orderDetailsModel.tax)})',
-                            style: titilliumRegular.copyWith(color: ColorResources.hintTextColor, fontSize: Dimensions.fontSizeDefault),):
+
+
+
+                            style: titilliumRegular.copyWith(color: ColorResources.hintTextColor, fontSize: Dimensions.fontSizeDefault),)
+                            
+                    ]))
+                            
+                            
+                            :
                           Text('(${getTranslated('tax', context)} ${widget.orderDetailsModel.productDetails!.taxModel})',
                             style: titilliumRegular.copyWith(color: ColorResources.hintTextColor, fontSize: Dimensions.fontSizeDefault))]),
                         const SizedBox(height: Dimensions.marginSizeExtraSmall),
@@ -317,9 +354,32 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
               ),
             ),
             child: CustomDirectionalityWidget(
-              child: Text(
+              child: 
+               Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
+              
+              
+              Text(
                 widget.orderDetailsModel.productDetails?.clearanceSale != null ?
-                PriceConverter.percentageCalculation(context, widget.orderDetailsModel.productDetails?.unitPrice, widget.orderDetailsModel.productDetails?.clearanceSale?.discountAmount, widget.orderDetailsModel.productDetails?.clearanceSale?.discountType) :
+
+
+                
+                PriceConverter.percentageCalculation(context, widget.orderDetailsModel.productDetails?.unitPrice, widget.orderDetailsModel.productDetails?.clearanceSale?.discountAmount, widget.orderDetailsModel.productDetails?.clearanceSale?.discountType)
+                
+                
+                
+                
+                 :
+                
+                
                 PriceConverter.percentageCalculation(
                   context, (widget.orderDetailsModel.price! * widget.orderDetailsModel.qty!),
                   widget.orderDetailsModel.discount,
@@ -330,6 +390,10 @@ class _OrderDetailsWidgetState extends State<OrderDetailsWidget> {
                   color: ColorResources.white,
                 ),
               ),
+            
+                    ]))
+            
+            
             ),
           ),
         )

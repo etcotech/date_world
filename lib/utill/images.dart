@@ -207,6 +207,7 @@ class Images {
   static const String previewEyeIcon = 'assets/images/preview_eye_icon.png';
   static const String downloadPreviewIcon = 'assets/images/download_preview_icon.png';
   static const String profileBgImage = 'assets/images/profile_bg_image.png';
+  static const String SAR = 'assets/svg/SAR.svg';
 
   static const String verifiedSvg = 'assets/svg/verified_svg.svg';
   static const String notVerifiedSvg = 'assets/svg/not_verified_svg.svg';

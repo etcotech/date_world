@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:date_world/common/basewidget/custom_image_widget.dart';
 import 'package:date_world/common/basewidget/discount_tag_widget.dart';
 import 'package:date_world/features/product/domain/models/product_model.dart';
-
+import 'package:date_world/features/product_details/screens/product_details_screen.dart';
+import 'package:date_world/features/product_details/widgets/favourite_button_widget.dart';
 import 'package:date_world/helper/price_converter.dart';
 import 'package:date_world/localization/controllers/localization_controller.dart';
 import 'package:date_world/localization/language_constrants.dart';
@@ -9,9 +10,9 @@ import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
-import 'package:date_world/common/basewidget/custom_image_widget.dart';
-import 'package:date_world/features/product_details/screens/product_details_screen.dart';
-import 'package:date_world/features/product_details/widgets/favourite_button_widget.dart';
+import 'package:date_world/utill/images.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 
@@ -150,12 +151,38 @@ class SliderProductWidget extends StatelessWidget {
 
 
                     Row( mainAxisAlignment: MainAxisAlignment.center, children: [
+                    
+                     Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
                       Text(((product.discount!= null && product.discount! > 0) || (product.clearanceSale?.discountAmount ?? 0) > 0) ?
-                      PriceConverter.convertPrice(context, product.unitPrice) : '',
+                      PriceConverter.convertPrice(context,
+                       product.unitPrice) : '',
                         style: robotoBold.copyWith(color: ColorResources.hintTextColor,
-                        decoration: TextDecoration.lineThrough, fontSize: Dimensions.fontSizeExtraSmall)),
+                        decoration: TextDecoration.lineThrough, fontSize: Dimensions.fontSizeExtraSmall)
+                        )
+                        
+                    ])
+                     )
+                        ,
+                        
                       const SizedBox(width: Dimensions.paddingSizeSmall),
-
+ Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 5,
+                    children: [
+                         SvgPicture.asset(Images.SAR,
+                        width: 15,height: 15,
+                        color:Colors.black),
 
                       Text(PriceConverter.convertPrice(context, product.unitPrice,
                         discountType: (product.clearanceSale?.discountAmount ?? 0)  > 0
@@ -167,7 +194,7 @@ class SliderProductWidget extends StatelessWidget {
                         ),
                         style: robotoBold.copyWith(color: ColorResources.getPrimary(context))
                       )
-
+                    ]))
 
                     ])])]),
           ),

@@ -23,6 +23,7 @@ import 'package:date_world/utill/dimensions.dart';
 import 'package:date_world/utill/images.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:provider/provider.dart';
@@ -198,16 +199,34 @@ class CartScreenState extends State<CartScreen> {
                         Padding(padding: const EdgeInsets.only(bottom: Dimensions.paddingSizeSmall),
                           child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
 
-                            Row(children: [
-                                Text('${getTranslated('total_price', context)} ', style: titilliumSemiBold.copyWith(
-                                    fontSize: Dimensions.fontSizeLarge,
-                                    color: Provider.of<ThemeController>(context, listen: false).darkTheme? Theme.of(context).hintColor : Theme.of(context).primaryColor)),
-                                Text('${getTranslated('inc_vat_tax', context)}', style: titilliumSemiBold.copyWith(
-                                    fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).hintColor))]),
-
+                           
+                                      Text('${getTranslated('total_price', context)} ', style: titilliumSemiBold.copyWith(
+                                          fontSize: Dimensions.fontSizeLarge,
+                               
+                                          color: Provider.of<ThemeController>(context, listen: false).darkTheme? 
+                                          Theme.of(context).hintColor : Theme.of(context).primaryColor))   
+                                                             
+                                                             
+                                                             ,
+                                                              
+                                                                          Text('${getTranslated('inc_vat_tax', context)}', style: titilliumSemiBold.copyWith(
+                                                                              fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).hintColor)),
+   Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
                             Text(PriceConverter.convertPrice(context, amount+tax+shippingAmount-freeDeliveryAmountDiscount), style: titilliumSemiBold.copyWith(
                                 color: Provider.of<ThemeController>(context, listen: false).darkTheme? Theme.of(context).hintColor : Theme.of(context).primaryColor,
-                                fontSize: Dimensions.fontSizeLarge))])),
+                                fontSize: Dimensions.fontSizeLarge))
+                    ]))
+                                
+                                ])),
 
 
 
@@ -513,17 +532,32 @@ class CartScreenState extends State<CartScreen> {
                                           shippingController.shippingList![index].shippingIndex == -1)?const SizedBox():
                                       Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                                         Row(children: [
+                                             Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
                                             Text((shippingController.shippingList == null ||
                                                 shippingController.shippingList![index].shippingMethodList == null ||
                                                 shippingController.chosenShippingList.isEmpty ||
                                                 shippingController.shippingList![index].shippingIndex == -1) ? '':
-                                            '${getTranslated('shipping_cost', context)??''} : ', style: textRegular,),
+                                            '${getTranslated('shipping_cost', context)??''} : ', style: textRegular,)
+                                            
+                    ]))
+                                            
+                                            ,
 
                                           Text((shippingController.shippingList == null ||
                                               shippingController.shippingList![index].shippingMethodList == null ||
                                               shippingController.chosenShippingList.isEmpty ||
                                               shippingController.shippingList![index].shippingIndex == -1) ? ''
-                                              : PriceConverter.convertPrice(context,
+                                              : 
+                                              PriceConverter.convertPrice(context,
                                               shippingController.shippingList![index].shippingMethodList![shippingController.shippingList![index].shippingIndex!].cost),
                                               style: textBold.copyWith(),
                                               maxLines: 1, overflow: TextOverflow.ellipsis,textAlign: TextAlign.end),

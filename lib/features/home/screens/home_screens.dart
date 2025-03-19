@@ -1,12 +1,14 @@
 import 'package:date_world/common/basewidget/title_row_widget.dart';
 import 'package:date_world/features/address/controllers/address_controller.dart';
 import 'package:date_world/features/auth/controllers/auth_controller.dart';
+import 'package:date_world/features/auth/screens/login_screen.dart';
 import 'package:date_world/features/banner/controllers/banner_controller.dart';
 import 'package:date_world/features/banner/widgets/banners_widget.dart';
 import 'package:date_world/features/banner/widgets/single_banner_widget.dart';
 import 'package:date_world/features/brand/controllers/brand_controller.dart';
 import 'package:date_world/features/brand/widgets/brand_list_widget.dart';
 import 'package:date_world/features/cart/controllers/cart_controller.dart';
+import 'package:date_world/features/cart/screens/cart_screen.dart';
 import 'package:date_world/features/category/controllers/category_controller.dart';
 import 'package:date_world/features/category/widgets/category_list_widget.dart';
 import 'package:date_world/features/clearance_sale/widgets/clearance_sale_list_widget.dart';
@@ -137,6 +139,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+       bool isGuestMode = !Provider.of<AuthController>(Get.context!, listen: false).isLoggedIn();
+
     final ConfigModel? configModel = Provider.of<SplashController>(context, listen: false).configModel;
 
     List<String?> types =[getTranslated('new_arrival', context),getTranslated('top_product', context),
@@ -146,6 +150,115 @@ class _HomePageState extends State<HomePage> {
     backgroundColor: Theme.of(context).brightness==Brightness.light?
     Colors.white:Colors.black
     ,
+   appBar:  PreferredSize(preferredSize: const Size.fromHeight(100),
+       child:
+       Container(
+        height: 100,
+        margin: const EdgeInsets.only(
+          bottom: 32
+        ),
+            padding: const EdgeInsets.only(top: 30, left: 16,
+             right: 16, bottom: 5),
+            // color: Theme.of(context).primaryColor,
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                  Row(
+                    children: [
+                      
+                      
+    
+      Image.asset(Images.logoWithNameImage, 
+      // color: Colors.white,
+       height: 50,width: 150,),
+                    ],
+                  ),
+                  
+                  Consumer<ProfileController>(
+        builder: (context,profile,_) {
+
+          if (profile.userInfoModel==null) {
+
+
+            return InkWell(
+
+              onTap: (){
+   Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen()));
+              },
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+              TextButton(onPressed: (){
+              
+              }, child:  Text(getTranslated('sign_in', context)!, style: const TextStyle(
+                color: Colors.black ,fontSize: 16
+              ),)),
+              
+                  const Icon(Icons.person_outline, color: Colors.black),
+                ],
+              ),
+            );
+          
+          }
+                        return Row(
+                          children: [
+
+                        
+                           !isGuestMode?  Text(
+                            "${ profile.userInfoModel?.fName}"
+                             , 
+                                                      style:  const TextStyle(
+                                                        fontWeight: FontWeight.w600,
+                             color: Colors.black
+                           ),
+                           
+                           )
+                           :
+                           const Icon(Icons.person_outline, color: Colors.black),
+                            const SizedBox(width: 8),
+                            Stack(
+                              children: [
+                                 Icon(Icons.shopping_cart_outlined, color: Theme.of(context).primaryColor),
+                                InkWell(
+                                  onTap: (){
+                                       Navigator.push(context, MaterialPageRoute(builder: (context) => const CartScreen(
+                                        
+                                       )));
+
+                                  },
+                                  child: Positioned(
+                                    right: 0,
+                                    top: 0,
+                                    child: Container(
+                                      padding: const EdgeInsets.all(2),
+                                      decoration: const BoxDecoration(
+                                        color: Colors.orange,
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: const Text(
+                                        "",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        );
+                      }
+                    ),
+                  ],
+                )
+              ]
+            )
+            )
+            ),
       body: SafeArea(child: RefreshIndicator(
         onRefresh: () async {
           await HomePage.loadData(true);
@@ -153,6 +266,8 @@ class _HomePageState extends State<HomePage> {
         child: CustomScrollView(
           
           controller: _scrollController, slivers: [
+
+            /*
           SliverAppBar(
             floating: true,
             elevation: 0,
@@ -162,7 +277,7 @@ class _HomePageState extends State<HomePage> {
             title: Image.asset(Images.logoWithNameImage, height: 35),
             toolbarHeight: 100,
           ),
-
+*/
           SliverToBoxAdapter(child:
            Provider.of<SplashController>(context, listen: false).configModel!.announcement!.status == '1'?
           Consumer<SplashController>(

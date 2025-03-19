@@ -12,7 +12,9 @@ import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 
@@ -41,7 +43,20 @@ class ProductTitleWidget extends StatelessWidget {
 
             Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
               CustomDirectionalityWidget(
-                child: Text('${startingPrice != null ?
+                child: 
+                
+                 Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 15,height: 15,
+                      color: Colors.black),
+                Text('${startingPrice != null ?
+
                     PriceConverter.convertPrice(context, startingPrice,
                     discount: (productModel?.clearanceSale?.discountAmount ?? 0) > 0
                       ?  productModel?.clearanceSale?.discountAmount
@@ -60,17 +75,38 @@ class ProductTitleWidget extends StatelessWidget {
 
                     style: titilliumBold.copyWith(color: ColorResources.getPrimary(context),
                         fontSize: Dimensions.fontSizeLarge)),
+          
+                    ]))
+          
               ),
 
               if((productModel!.discount != null && productModel!.discount! > 0) || (productModel!.clearanceSale != null && productModel!.clearanceSale!.discountAmount! > 0) )...[
                 const SizedBox(width: Dimensions.paddingSizeSmall),
 
+
                 CustomDirectionalityWidget(
-                  child: Text('${PriceConverter.convertPrice(context, startingPrice)}'
+                  child:
+                  
+                   Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
+                   Text('${PriceConverter.convertPrice(context, startingPrice)}'
                       '${endingPrice!= null ? ' - ${PriceConverter.convertPrice(context, endingPrice)}' : ''}',
                       style: titilliumRegular.copyWith(color: Theme.of(context).hintColor,
                           decoration: TextDecoration.lineThrough)),
+
+                    ]))
                 ),
+
+
+
               ],
             ]),
             const SizedBox(height: Dimensions.paddingSizeSmall),

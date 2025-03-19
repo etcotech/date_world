@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:date_world/data/datasource/remote/dio/dio_client.dart';
-import 'package:date_world/main.dart';
 import 'package:date_world/features/auth/controllers/auth_controller.dart';
+import 'package:date_world/main.dart';
 import 'package:date_world/utill/app_constants.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -14,7 +14,7 @@ class LocalizationController extends ChangeNotifier {
     _loadCurrentLanguage();
   }
 
-  Locale _locale = Locale(AppConstants.languages[0].languageCode!, AppConstants.languages[0].countryCode);
+  Locale _locale = Locale(AppConstants.languages[1].languageCode!, AppConstants.languages[1].countryCode);
   bool _isLtr = true;
   int? _languageIndex;
 

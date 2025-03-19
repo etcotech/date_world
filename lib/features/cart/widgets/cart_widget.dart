@@ -11,9 +11,11 @@ import 'package:date_world/main.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 class CartWidget extends StatelessWidget {
@@ -113,18 +115,58 @@ class CartWidget extends StatelessWidget {
 
 
                               Row(children: [cartModel!.discount!> 0 ?
-                              Text(PriceConverter.convertPrice(context, cartModel!.price),maxLines: 1,overflow: TextOverflow.ellipsis,
+                              
+
+
+                              Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 12,height: 12,
+                      color: Theme.of(context).hintColor ),
+
+                              Text(PriceConverter.convertPrice(context, cartModel!.price),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                                   style: titilliumSemiBold.copyWith(color: Theme.of(context).hintColor,
-                                      decoration: TextDecoration.lineThrough)):const SizedBox(),
+                                      decoration: TextDecoration.lineThrough)
+                                      )
+                                    
+                                      
+                    ]))
+                              :
+                                      const SizedBox()          ,
+                                
+                                
+                                
+                                
                                 SizedBox(width: Dimensions.fontSizeSmall,),
 
-
+ Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 5,
+                    children: [
+                         SvgPicture.asset(Images.SAR,
+                        width: 15,height: 15,
+                        color:Colors.black),
                                 Text(PriceConverter.convertPrice(context, cartModel!.price,
                                     discount: cartModel!.discount, discountType: 'amount'),
                                     maxLines: 1,overflow: TextOverflow.ellipsis,
                                     style: textBold.copyWith(color: (cartModel!.shop != null && (cartModel!.shop!.temporaryClose! || cartModel!.shop!.vacationStatus!))?
                                     Theme.of(context).hintColor:ColorResources.getPrimary(context),
-                                        fontSize: Dimensions.fontSizeLarge))]),
+                                        fontSize: Dimensions.fontSizeLarge))
+                    ])
+ )
+                                        
+                                        ])
+                                        
+                                        ,
 
 
                               //variation

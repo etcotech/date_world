@@ -225,7 +225,11 @@ class _ProductDetailsProductListWidget extends StatelessWidget {
                   return (sellerProductController.sellerMoreProduct != null && sellerProductController.sellerMoreProduct!.products != null &&
                       sellerProductController.sellerMoreProduct!.products!.isNotEmpty)?
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical : Dimensions.paddingSizeDefault),
+                    padding: const EdgeInsets.symmetric(vertical : 
+                    
+                    Dimensions.paddingSizeDefault),
+
+                    
                     child: TitleRowWidget(title: getTranslated('more_from_the_shop', context),
                       onTap: (){
                         if(productDetailsController.productDetailsModel?.addedBy == 'seller') {
