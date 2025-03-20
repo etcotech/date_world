@@ -169,6 +169,7 @@ class MyApp extends StatelessWidget {
             primaryColor: themeController.selectedPrimaryColor,
             secondaryColor: themeController.selectedPrimaryColor,
           ),
+          
           locale: Provider.of<LocalizationController>(context).locale,
           localizationsDelegates: [
             AppLocalization.delegate,
