@@ -2,8 +2,8 @@ import 'package:date_world/localization/models/language_model.dart';
 import 'package:date_world/utill/images.dart';
 
 class AppConstants {
-  static const String appName = 'عالم التمر';
-  static const String slogan = 'عالم التمر';
+  static const String appName = 'عالم التمور';
+  static const String slogan = 'عالم التمور';
   static const String appVersion = '15.0';
 
 

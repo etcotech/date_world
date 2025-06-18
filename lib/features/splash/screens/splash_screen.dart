@@ -255,6 +255,7 @@ class SplashScreenState extends State<SplashScreen> {
       body: Provider.of<SplashController>(context).hasConnection ?
       Center(child: Column(mainAxisSize: MainAxisSize.min, children: [
         SizedBox(width: 150, child: Image.asset(Images.logoImage,
+        height: 200.0, fit: BoxFit.cover,
          width: 150.0)),
         // Text(AppConstants.appName,style: textRegular.copyWith(fontSize: Dimensions.fontSizeOverLarge, color: Colors.white)),
         // Padding(padding: const EdgeInsets.only(top: Dimensions.paddingSizeSmall),

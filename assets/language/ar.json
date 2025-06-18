@@ -734,6 +734,14 @@
   "choose_shipping_method": "اختيار أسلوب الشحن",
   "first_name_is_required": "الإسم الأول مطلوب",
   "last_name_is_required": "إسم العائلة مطلوب",
-  "in_stock" : "في المخزن"
+  "in_stock" : "في المخزن", 
+  "signup_here":"سجل هنا",
+"create_an_account": "ليس لديك حساب؟", 
+"email/phone": "البريد الإلكتروني / رقم الجوال",
+"write_something": "اكتب شيئًا", 
+"password_hint": "كلمة المرور (7 أحرف على الأقل)"  ,
+"i_agree_with_the": "أوافق على"  ,
+"already_have_account": "هل لديك حساب بالفعل؟" 
+  
 
 }

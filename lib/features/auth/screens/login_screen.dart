@@ -157,7 +157,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
                                     child: Directionality(
                                         textDirection: TextDirection.ltr,
-                                        child: Image.asset(Images.logoWithNameImage, width: 140, height: 50)
+                                        child: Image.asset(Images.logoWithNameImage, width: 180, height: 80)
                                     ),
                                   ),
                                 ),
@@ -200,6 +200,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                       controller: _emailPhoneController,
                                       inputType: TextInputType.name,
                                       labelText: getTranslated('email/phone', context),
+                                      hintText: getTranslated('write_something', context),
                                       required: true,
                                     );
                                   },

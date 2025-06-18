@@ -848,6 +848,7 @@
   "save_more": "Save More",
   "refund_request_status": "Refund Request Status",
   "can_not_select_more_than_5_files": "Cannot select more than 5 files",
-  "write_somethings": "Write somethings",
+"write_something": "Write something...",
+
   "no_payment_method_available_right_now": "No Payment method available right now."
 }

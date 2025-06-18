@@ -56,14 +56,14 @@ class _AuthScreenState extends State<AuthScreen> with SingleTickerProviderStateM
             return Column(children: [
                 Stack(children: [
 
-                  Container(height: 150, decoration: BoxDecoration(color: Theme.of(context).primaryColor)),
-                  Image.asset(Images.loginBg,fit: BoxFit.cover,height: 150, opacity : const AlwaysStoppedAnimation(.15)),
+                  Container(height: 180, decoration: BoxDecoration(color: Theme.of(context).primaryColor)),
+                  Image.asset(Images.loginBg,fit: BoxFit.cover,height: 180, opacity : const AlwaysStoppedAnimation(.15)),
 
-                  Padding(padding: EdgeInsets.only(top: MediaQuery.of(context).size.height * .03),
+                  Padding(padding: EdgeInsets.only(top: MediaQuery.of(context).size.height * .06),
                     child: Column(
                       children: [
                         Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                          Image.asset(Images.splashLogo, width: 130, height: 80)]),
+                          Image.asset(Images.logoImage, width: 130, height: 80)]),
 
                         Text(getTranslated('sign_up', context)!, style: titilliumRegular.copyWith(
                           color: Theme.of(context).highlightColor,

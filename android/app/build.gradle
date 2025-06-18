@@ -31,6 +31,7 @@ if (keystorePropertiesFile.exists()) {
 android {
     namespace "com.dates.sa"
     compileSdk 35
+    ndkVersion "27.2.12479018"
 
     compileOptions {
         coreLibraryDesugaringEnabled true

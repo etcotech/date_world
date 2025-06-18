@@ -275,7 +275,7 @@ class _HomePageState extends State<HomePage> {
             centerTitle: false,
             automaticallyImplyLeading: false,
             backgroundColor: Theme.of(context).highlightColor,
-            title: Image.asset(Images.logoWithNameImage, height: 40),
+            title: Image.asset(Images.logoWithNameImage, height: 50),
             toolbarHeight: 80,
             
 
@@ -298,21 +298,20 @@ actions: [
           if (profile.userInfoModel==null) {
 
 
-            return InkWell(
+            return GestureDetector(
 
               onTap: (){
    Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginScreen()));
               },
               child: Row(
                 mainAxisSize: MainAxisSize.min,
+                spacing: 4,
                 children: [
-              TextButton(onPressed: (){
+               Text(getTranslated('sign_in', context)!, style: const TextStyle(
+                color: Colors.black ,fontSize: 16)),
               
-              }, child:  Text(getTranslated('sign_in', context)!, style: const TextStyle(
-                color: Colors.black ,fontSize: 16
-              ),)),
               
-                  const Icon(Icons.person_outline, color: Colors.black),
+                   const Icon(Icons.person_outline, color: Colors.black),
                 ],
               ),
             );

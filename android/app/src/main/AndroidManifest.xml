@@ -34,7 +34,7 @@
     </queries>
 
     <application
-        android:label="عالم التمر"
+        android:label="عالم التمور"
         android:name="${applicationName}"
         android:extractNativeLibs="true"
         android:requestLegacyExternalStorage="true"

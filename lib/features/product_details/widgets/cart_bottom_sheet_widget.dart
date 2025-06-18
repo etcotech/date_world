@@ -24,8 +24,10 @@ import 'package:date_world/theme/controllers/theme_controller.dart';
 import 'package:date_world/utill/color_resources.dart';
 import 'package:date_world/utill/custom_themes.dart';
 import 'package:date_world/utill/dimensions.dart';
+import 'package:date_world/utill/images.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 
@@ -199,24 +201,37 @@ class CartBottomSheetWidgetState extends State<CartBottomSheetWidget> {
                                           '${widget.product!.thumbnailFullUrl?.path}'))),
 
                               widget.product!.discount! > 0 ?
-                              Container(width: 100,
-                                padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
-                                alignment: Alignment.center,
-                                decoration: BoxDecoration(color:Theme.of(context).colorScheme.error,
-                                    borderRadius: const BorderRadius.vertical(top: Radius.circular(Dimensions.paddingSizeExtraSmall))),
-                                child: Padding(padding: const EdgeInsets.all(5),
-                                    child: CustomDirectionalityWidget(
-                                      child: Text(PriceConverter.percentageCalculation(context,
-                                          widget.product!.unitPrice,
-                                          (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
-                                          widget.product?.clearanceSale?.discountAmount :
-                                          widget.product!.discount,
-                                          (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
-                                          widget.product?.clearanceSale?.discountType :
-                                          widget.product!.discountType),
-                                          style: titilliumRegular.copyWith(color: const Color(0xFFFFFFFF),
-                                            fontSize: Dimensions.fontSizeDefault)),
-                                    )),
+                              Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,
+                      
+                     
+                      width: 15,height: 15,
+                      color: Colors.black),
+                                    Container(width: 100,
+                                      padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(color:Theme.of(context).colorScheme.error,
+                                          borderRadius: const BorderRadius.vertical(top: Radius.circular(Dimensions.paddingSizeExtraSmall))),
+                                      child: Padding(padding: const EdgeInsets.all(5),
+                                          child: CustomDirectionalityWidget(
+                                            child: Text(PriceConverter.percentageCalculation(context,
+                                                widget.product!.unitPrice,
+                                                (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
+                                                widget.product?.clearanceSale?.discountAmount :
+                                                widget.product!.discount,
+                                                (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
+                                                widget.product?.clearanceSale?.discountType :
+                                                widget.product!.discountType),
+                                                style: titilliumRegular.copyWith(color: const Color(0xFFFFFFFF),
+                                                  fontSize: Dimensions.fontSizeDefault)),
+                                          )),
+                                    ),
+                                  ],
+                                ),
                               ) : const SizedBox(width: 93)
                             ]),
                             const SizedBox(height: 10),
@@ -248,32 +263,48 @@ class CartBottomSheetWidgetState extends State<CartBottomSheetWidget> {
 
                           Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
 
-                            CustomDirectionalityWidget(
-                              child: Text('${startingPrice != null ? PriceConverter.convertPrice(context, startingPrice,
-                                  discount: (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
-                                  widget.product?.clearanceSale?.discountAmount
-                                  : widget.product?.discount,
-                                  discountType:  (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
-                                  widget.product?.clearanceSale?.discountType :
-                                  widget.product?.discountType):''}'
-
-                                  '${endingPrice !=null ? ' - ${PriceConverter.convertPrice(context, endingPrice,
-                                  discount: (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
-                                  widget.product?.clearanceSale?.discountAmount :
-                                  widget.product?.discount,
-                                  discountType: widget.product?.discountType)}' : ''}',
-
-                                  style: titilliumRegular.copyWith(color: Theme.of(context).primaryColor,
-                                      fontSize: Dimensions.fontSizeExtraLarge)),
+                         Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min  ,
+                    children: [
+                      SvgPicture.asset(Images.SAR,width: 15,height: 15,
+                      color: Colors.black),
+                                  CustomDirectionalityWidget(
+                                    child: Text('${startingPrice != null ? PriceConverter.convertPrice(context, startingPrice,
+                                        discount: (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
+                                        widget.product?.clearanceSale?.discountAmount
+                                        : widget.product?.discount,
+                                        discountType:  (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
+                                        widget.product?.clearanceSale?.discountType :
+                                        widget.product?.discountType):''}'
+                                  
+                                        '${endingPrice !=null ? ' - ${PriceConverter.convertPrice(context, endingPrice,
+                                        discount: (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
+                                        widget.product?.clearanceSale?.discountAmount :
+                                        widget.product?.discount,
+                                        discountType: widget.product?.discountType)}' : ''}',
+                                  
+                                        style: titilliumRegular.copyWith(color: Theme.of(context).primaryColor,
+                                            fontSize: Dimensions.fontSizeExtraLarge)),
+                                  ),
+                                ],
+                              ),
                             ),
 
                             (widget.product?.discount != null && (widget.product?.discount ?? 0) > 0) || (widget.product?.clearanceSale?.discountAmount ?? 0) > 0 ?
+                            
+                            
                             CustomDirectionalityWidget(
                               child: Text('${PriceConverter.convertPrice(context, startingPrice)}'
                                 '${endingPrice!= null ? ' - ${PriceConverter.convertPrice(context, endingPrice)}' : ''}',
                                 style: titilliumRegular.copyWith(color: Theme.of(context).hintColor,
                                     decoration: TextDecoration.lineThrough)),
-                            ) : const SizedBox(),
+                            ) 
+                            
+                            
+                            : const SizedBox(),
 
                           ]),
                         ]))])])),
@@ -427,9 +458,19 @@ class CartBottomSheetWidgetState extends State<CartBottomSheetWidget> {
 
                     Text(getTranslated('total_price', context)!, style: robotoBold),
                     const SizedBox(width: Dimensions.paddingSizeSmall),
-                    CustomDirectionalityWidget(
-                      child: Text(PriceConverter.convertPrice(context, priceWithQuantity),
-                        style: titilliumBold.copyWith(color: ColorResources.getPrimary(context), fontSize: Dimensions.fontSizeLarge)),
+                   Directionality(
+                  textDirection: TextDirection.ltr,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SvgPicture.asset(Images.SAR,width: 15,height: 15,
+                      color: Colors.black),
+                          CustomDirectionalityWidget(
+                            child: Text(PriceConverter.convertPrice(context, priceWithQuantity),
+                              style: titilliumBold.copyWith(color: ColorResources.getPrimary(context), fontSize: Dimensions.fontSizeLarge)),
+                          ),
+                        ],
+                      ),
                     ),
                     widget.product!.taxModel == 'exclude' ?
                     Padding(
