@@ -741,7 +741,6 @@
 "write_something": "اكتب شيئًا", 
 "password_hint": "كلمة المرور (7 أحرف على الأقل)"  ,
 "i_agree_with_the": "أوافق على"  ,
-"already_have_account": "هل لديك حساب بالفعل؟" 
-  
-
+"already_have_account": "هل لديك حساب بالفعل؟",
+  "restock_requests": "طلب إعادة توفير المنتج"
 }

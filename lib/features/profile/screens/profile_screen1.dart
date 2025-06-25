@@ -241,7 +241,7 @@ class _ProfileScreen1State extends State<ProfileScreen1> {
                                 ),
                                 color:  Theme.of(context).cardColor,
                               ),
-                              child: const Icon(Icons.more_vert_rounded, color: Colors.black),
+                              child: const Icon(Icons.delete_outline, color: Colors.black),
                             ),
                           ),
                         )
