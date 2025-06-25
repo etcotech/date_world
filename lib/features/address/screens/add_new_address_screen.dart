@@ -59,7 +59,8 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
   CameraPosition? _cameraPosition;
   bool _updateAddress = true;
   Address? _address;
-  String zip = '',  country = 'IN';
+  String zip = '',
+  country = 'SA';
   late LatLng _defaut;
 
   final GlobalKey<FormState> _addressFormKey = GlobalKey();
@@ -389,6 +390,7 @@ class _AddNewAddressScreenState extends State<AddNewAddressScreen> {
                                               _countryCodeController.text = val.name!;
                                               log("==ccc===>${val.flagUri}");
                                             },
+                                            favorite: ["sa"],
                                             initialSelection: _countryCodeController.text,
                                             showDropDownButton: true,
                                             showCountryOnly: false,
